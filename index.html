@@ -58,6 +58,61 @@
 
     <section id = "feedback">
         <h2>Feedback <br> <i>For the Team Leads</i></h2>
+        <form>
+            <fieldset>
+                <legend>Feedback Form</legend>
+
+                <label for="name">Name: <input type="text" id="name" name="name"></label>
+                <br><br>
+                
+                <label for="meeting-date">Date of Meeting:
+                    <input type="date" id="meeting-date" name="meeting-date">
+                </label>
+                <br><br>
+
+                <p>Was the meeting productive?</p>
+                <input type="radio" id="yes" name="productive" value="yes">
+                <label for="yes">Yes!</label>
+                <input type="radio" id="no" name="productive" value="no">
+                <label for="no">Not really</label>
+                <br><br>
+
+                <p>Which topics were covered today? (Select all that apply)</p>
+                <input type="checkbox" id="icebreaker" name="topics-covered" value="Icebreaker">
+                <label for="icebreaker">Icebreaker</label>
+                <br>
+                <input type="checkbox" id="talk" name="topics-covered" value="Group Conversation">
+                <label for="talk">Group Conversation</label>
+                <br>
+                <input type="checkbox" id="technical" name="topics-covered" value="Technical">
+                <label for="talk">Technical</label>
+                <br><br>
+
+                <label for="role">What is Your Preferred Role?</label>
+                <datalist id="role" name="role">
+                    <option value="designer">Designer</option>
+                    <option value="frontend">Front-End</option>
+                    <option value="backend">Back-End</option>
+                    <option value="fullstack">Full-Stack</option>
+                </datalist>
+                <br><br>
+
+                <label for="next-meeting">When Do You Want to Meet Next?</label>
+                <select id="next-meeting" name="next-meeting">
+                    <option value="tue">Tuesday After Class</option>
+                    <option value="wedAfternoon">Wednesday Afternoon</option>
+                    <option value="wedEvening">Wednesday Evening</option>
+                    <option value="thur">Thursday After Class</option>
+                </select>
+                <br><br>
+
+                <label for="extra">Anything else you want to add?</label><br>
+                <textarea id="extra" name="extra" rows="5" cols="25"></textarea>
+                <br><br>
+
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
     </section>
 
   </main>
