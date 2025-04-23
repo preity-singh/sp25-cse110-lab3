@@ -1,8 +1,5 @@
 /* style.css */
 
-* {
-  box-sizing: border-box;
-}
 
 * {
   box-sizing: border-box;
@@ -129,7 +126,6 @@ h1 {
   input[type="checkbox"] ~ label {
     font-style: italic;
   }
-
 
   fieldset label {
     display: block;
