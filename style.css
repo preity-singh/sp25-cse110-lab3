@@ -1,4 +1,10 @@
 /* style.css */
+/* 
+  NOTE: I use newer CSS features, color-mix() and :has(), 
+  which may not be fully supported in all browsers right now.
+  It may appear as an error in a CSS validator, 
+  but are this is intentional for modern styling.
+*/
 
 
 * {
