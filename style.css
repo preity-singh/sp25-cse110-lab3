@@ -1,5 +1,9 @@
 
 
+* {
+  box-sizing: border-box;
+}
+
 body {
     background-color: rgb(235, 249, 250);
   }
@@ -56,11 +60,19 @@ h1 {
     color: #FF5733;                    /* vivid orange */
   }
 
+  /* grid layout */
   #agenda ol {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     background-color: #f7f9fa;
+  }
+
+  /* attribute selector */
+  input[type="checkbox"] {
+    accent-color: darkcyan;
+    margin-left: 0.5rem;
+    cursor: pointer;
   }
 
   button {
@@ -103,8 +115,24 @@ h1 {
     border-radius: 0.5rem;
   }
 
+  form > fieldset {
+    background-color: #f9f9f9;
+  }
+
+  input[type="checkbox"] ~ label {
+    font-style: italic;
+  }
+
+  input[type="radio"] + label {
+    font-weight: bold;
+  }
+
   .hide-me {
     display: none;
+  }
+
+  p.hide-me {
+    opacity: 0.5;
   }
 
   .fixed-note {
@@ -117,6 +145,10 @@ h1 {
     font-size: 0.9rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 6px black;
+  }
+
+  section#feedback fieldset {
+    font-family: 'Karla', sans-serif;
   }
 
 
