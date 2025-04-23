@@ -1,0 +1,153 @@
+
+
+body {
+    background-color: rgb(235, 249, 250);
+  }
+
+h1, h2, h3 {
+    font-family: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+p {
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+.centered h2 {
+  text-align: center;
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+
+h1 {
+  background-color: var(--highlight-color, cadetblue); /* example of fallback */
+  display: inline-block;          /* Shrinks width to just the text */
+  padding: 0.3em 0.6em;           /* Space around the words */
+  border-radius: 0.2em;     
+}
+
+  h2 {
+    font-size: 2em;          /* relative to parent font-size */
+    margin-bottom: 3%;       /* percent of parent element */
+    padding-left: 1rem;      /*relative to root font-size*/
+  }
+
+  h3 {
+    color: hsl(210, 70%, 40%);   /* bluish tone */
+    text-decoration: underline;
+    padding-left: 1em;
+  }  
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem; /* spacing btwn items */
+    list-style: none;
+  }
+
+  ul {
+    padding-top: 10px;       /* pixels */
+    font-size: 12pt;         /* points */
+    margin-left: auto;        /* centimeters */
+  }
+
+  a {
+    color: #FF5733;                    /* vivid orange */
+  }
+
+  #agenda ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    background-color: #f7f9fa;
+  }
+
+  button {
+    background-color: color-mix(in srgb, deeppink 70%, white);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+  }
+
+  button:hover {
+    background-color: color-mix(in srgb, deeppink 90%, white); /* deeper pink when hover */
+    cursor: pointer;
+    transform: scale(1.05); /* button grows! */
+  }
+  
+  button:active {
+    background-color: color-mix(in srgb, deeppink 40%, white); /* lighter when clicked */
+    transform: scale(0.98); /* cool press effect!! */
+  }
+
+  fieldset {
+    font-family: 'Karla', sans-serif;
+
+    /* margin */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  
+    /* padding */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  
+    /* border  */
+    border: 2px solid darkcyan;
+
+    border-radius: 0.5rem;
+  }
+
+  .hide-me {
+    display: none;
+  }
+
+  .fixed-note {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: gold;
+    color: black;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 6px black;
+  }
+
+
+/* responsive design for smaller screens */
+@media (max-width: 600px) {
+  body {
+    font-size: 90%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  #agenda ol {
+    grid-template-columns: 1fr; /* stack*/
+  }
+
+  .centered h2 {
+    left: 0;
+    top: 0;
+    text-align: center;
+  }
+
+  img, video, audio {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
