@@ -1,4 +1,8 @@
+/* style.css */
 
+* {
+  box-sizing: border-box;
+}
 
 body {
     background-color: rgb(235, 249, 250);
@@ -63,6 +67,16 @@ h1 {
     background-color: #f7f9fa;
   }
 
+  input[type="checkbox"] {
+    accent-color: darkcyan; /* changes checkbox color */
+    margin-left: 0.5rem;
+    cursor: pointer;
+  }
+
+  .radio-question:has(input[type="radio"]) {
+    background-color: #f9f9ff;
+  }
+
   button {
     background-color: color-mix(in srgb, deeppink 70%, white);
     color: white;
@@ -99,13 +113,21 @@ h1 {
   
     /* border  */
     border: 2px solid darkcyan;
-
     border-radius: 0.5rem;
+  }
+
+  fieldset label {
+    display: block;
+    margin-bottom: 0.1rem;
   }
 
   .hide-me {
     display: none;
   }
+
+  p.hide-me {
+    font-size: 0.8rem;
+  }t
 
   .fixed-note {
     position: fixed;
