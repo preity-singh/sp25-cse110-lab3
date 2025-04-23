@@ -1,4 +1,8 @@
+/* style.css */
 
+* {
+  box-sizing: border-box;
+}
 
 * {
   box-sizing: border-box;
@@ -75,6 +79,10 @@ h1 {
     cursor: pointer;
   }
 
+  .radio-question:has(input[type="radio"]) {
+    background-color: #f9f9ff;
+  }
+
   button {
     background-color: color-mix(in srgb, deeppink 70%, white);
     color: white;
@@ -111,7 +119,6 @@ h1 {
   
     /* border  */
     border: 2px solid darkcyan;
-
     border-radius: 0.5rem;
   }
 
@@ -123,8 +130,10 @@ h1 {
     font-style: italic;
   }
 
-  input[type="radio"] + label {
-    font-weight: bold;
+
+  fieldset label {
+    display: block;
+    margin-bottom: 0.1rem;
   }
 
   .hide-me {
@@ -132,7 +141,7 @@ h1 {
   }
 
   p.hide-me {
-    opacity: 0.5;
+    font-size: 0.8rem;
   }
 
   .fixed-note {
